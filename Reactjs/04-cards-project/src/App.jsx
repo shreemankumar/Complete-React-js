@@ -3,13 +3,27 @@ import Card from './components/Card'
 import User from './components/User'
 
 const App = () => {
-  Array = [45,56,67]
+  const arr = [{
+    name: "shreeman",
+    age: 24
+  },{
+    name: "sarthak",
+    age: 25
+  },{
+    name: "rahul",
+    age: 26
+  }]
+
+  arr.map(function(fun){
+    console.log(fun.age,fun.name);
+  })
+
   return (
     <div className='parent'>
-      <User name="shrerman" age = {Array[0]} />
-      <User name="rajesh" age = {Array[1]} />
-      <User name="subha" age = {Array[2]} />
-       </div>
+      {arr.map(function(fun){
+        return 
+      })}
+    </div>
   )
 }
 
