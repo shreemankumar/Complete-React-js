@@ -1,8 +1,8 @@
 import React from 'react'
 
-const User = () => {
+const User = (props) => {
   return (
-    <div>User</div>
+    <div style={{'color' : 'white'}}>{props.name},{props.age}</div>
   )
 }
 
