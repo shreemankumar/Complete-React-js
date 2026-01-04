@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
 }
 
 body {
@@ -26,12 +25,14 @@ img {
 }
 
 .parent{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #111;
   padding : 40px 30px;
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
+  
   
 }
 .card{
@@ -43,6 +44,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 .card .top{
   display: flex;
@@ -120,4 +122,5 @@ img {
   color: #b1b1b1;
   border: none;
   column-width: 600;
+  cursor: pointer;
 }
