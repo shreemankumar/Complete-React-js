@@ -1,0 +1,17 @@
+import React from 'react'
+import Navbar from './Navbar'
+import Page1Content from './Page1Content'
+import RightContent from './RightContent'
+import LeftContent from './LeftContent'
+
+const Section1 = () => {
+  return (
+    <div className='w-full h-full '>
+     <Navbar />
+     <Page1Content />
+     
+    </div>
+  )
+}
+
+export default Section1
