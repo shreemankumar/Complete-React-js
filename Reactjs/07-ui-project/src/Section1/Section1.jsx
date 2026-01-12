@@ -4,11 +4,13 @@ import Page1Content from './Page1Content'
 import RightContent from './RightContent'
 import LeftContent from './LeftContent'
 
-const Section1 = () => {
+const Section1 = (props) => {
+  console.log(props);
+  
   return (
     <div className='w-full h-full '>
      <Navbar />
-     <Page1Content />
+     <Page1Content users = {props.users}/>
      
     </div>
   )
