@@ -1,14 +1,18 @@
 import React from 'react'
-
+// onClick
+// onChange
 function App() {
+  function onChangeHandler(event){
+    console.log(event);
+    
+  }
   return (
     <div>
-      <h2>hey</h2>
-      <button onClick={function(func){
-        console.log(func);
-      }}>
-        change text
-      </button>
+      < input onChange={function(func){
+        onChangeHandler(func.target.value)
+      }} placeholder='Enter Your Name' type='text'>
+  
+      </input>
     </div>
   )
 }
