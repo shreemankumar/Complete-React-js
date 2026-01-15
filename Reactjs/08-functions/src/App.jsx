@@ -7,12 +7,10 @@ function App() {
     
   }
   return (
-    <div>
-      < input onChange={function(func){
-        onChangeHandler(func.target.value)
-      }} placeholder='Enter Your Name' type='text'>
-  
-      </input>
+    <div className='box' onMouseMove={(event) => {
+      console.log(event.clientX, event.clientY);
+    }}>
+ 
     </div>
   )
 }
