@@ -1,15 +1,26 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
+
 const App = () => {
-  //useState having two elements, first one is the variable Read only and the second one is for write only for update.
-  const [Download, setDownload] = useState('download')
+  const [num, setnum] = useState(0)
+  function increaseNum(){
+   setnum(num + 1)
+    console.log("increasing");
+    
+  }
+  function decreaseNum(){
+    setnum(num - 1)
+    console.log("decreasing");
+  }
+  function decreaseNumby10(){
+    setnum(num - 10)
+    console.log("decreasingby10");
+  }
   return (
     <div>
-      <h1>Click the button to get {Download}</h1>
-       <button onClick={() => {
-        setDownload("done !")
-       }}>Download</button>
-      
+      <h1>{num}</h1>
+      <button onClick={increaseNum}>Increase</button>
+      <button onClick={decreaseNum}>Decrease</button>
+      <button onClick={decreaseNumby10}>Decrease by 10</button>
     </div>
   )
 }
