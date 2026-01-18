@@ -18,3 +18,7 @@ html,body{
  button:hover{
   background-color: #444;
  }
+
+h3{
+   color: white;
+}
