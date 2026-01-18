@@ -1,0 +1,21 @@
+*{
+  margin: 20px;
+  padding: 0px;
+  background-color: #222;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.btn{
+  padding: 22px 44px;
+  border: none;
+  background-color: #444;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+.btn:hover{
+  background-color: #555;
+}
